@@ -13,6 +13,8 @@
     {% endcomment %}
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
 
+    <link href="{{ ASSET_PATH }}/resources/jquery.counter/css/jquery.counter-analog.css" rel="stylesheet">
+
     <!--[if lt IE 9]>
       <script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
     <![endif]-->
@@ -40,6 +42,7 @@
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
+            <li><a href="/">Register</a></li>
           </ul>
         </div>
       </div>
